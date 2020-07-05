@@ -1,0 +1,299 @@
+:root {
+  --main-backgroundcolor: whitesmoke;
+  --units-theme-main-color: #8fcb9b;
+  --food-theme-main-color: #9b8fcb;
+  --recipe-theme-main-color: #8f8073;
+  --calendar-theme-main-color: deeppink;
+  --extra-theme-main-color: gold;
+}
+
+.remove-standard-btn-styling {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+body {
+  background-color: var(--main-backgroundcolor);
+  font-family: "Open Sans", sans-serif;
+}
+
+.page-title {
+  font-weight: bold;
+  padding: 8px;
+}
+
+/* theme colors */
+.units-theme-color {
+  color: white;
+  background-color: var(--units-theme-main-color);
+}
+
+.food-theme-color {
+  color: white;
+  background-color: var(--food-theme-main-color);
+}
+
+.recipe-theme-color {
+  color: white;
+  background-color: var(--recipe-theme-main-color);
+}
+
+.calendar-theme-color {
+  color: white;
+  background-color: var(--calendar-theme-main-color);
+}
+
+.extra-theme-color {
+  color: black;
+  background-color: var(--extra-theme-main-color);
+}
+
+.message {
+  display: none;
+  padding: 8px;
+  color: black;
+  font-weight: 600;
+  background: rgba(255, 0, 0, 0.7);
+}
+
+.remove-warning-btn {
+  font-size: x-large;
+}
+
+.page-info {
+  font-size: small;
+  padding: 8px;
+}
+
+.add-element-form,
+.find-recipe-form {
+  margin: auto;
+  text-align: center;
+}
+
+.add-element-form input[type="text"],
+.find-recipe-form input[type="text"] {
+  width: calc(100% - 35vw - (2 * 8px));
+}
+
+.form-btn,
+.find-btn {
+  display: inline-block;
+  border: none;
+  padding: 3px;
+  width: 35vw;
+}
+
+.form-btn:hover {
+  opacity: 0.9;
+}
+
+.content-list {
+  padding: 8px;
+}
+
+.content-list-title {
+  display: flex;
+  align-items: center;
+}
+
+.format-btn {
+  cursor: pointer;
+  padding: 0 8px;
+  font-size: 32px;
+}
+
+.format-btn:hover {
+  opacity: 0.5;
+}
+
+.content-list ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.content-list a {
+  text-decoration: none;
+}
+
+.content-list li {
+  margin: 5px 0;
+  padding: 5px;
+  display: table;
+  border-radius: 12px;
+}
+
+.remove-btn {
+  margin-left: 8px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.remove-btn:hover {
+  color: white;
+  background-color: #5b9279;
+}
+
+.bottom-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.add-new-recipe-btn {
+  display: inline-block;
+  border: none;
+  padding: 9px 0px 9px 9px;
+  width: 25vw;
+}
+
+.add-new-recipe-btn:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.recipe-form-container {
+  padding: 7px;
+}
+
+input[name="recipe-image"] {
+  display: none;
+}
+
+.ingredient-line-btn {
+  font-size: 20px;
+  color: #8f8073;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.ingredient-line-btn:hover {
+  opacity: 0.7;
+}
+
+.ingredient-line-btn:active {
+  box-shadow: inset 0px 0px 15px #c1c1c1;
+}
+
+.ingredient-line-container {
+  margin-bottom: 1rem;
+}
+
+.disabled-line-btn {
+  color: lightgrey;
+}
+
+.half-width-btn {
+  text-align: center;
+  width: calc(49vw - 10px);
+  padding: 8px;
+}
+
+.half-width-btn:hover {
+  opacity: 0.7;
+}
+
+.half-width-btn:active {
+  box-shadow: inset 0px 0px 15px #c1c1c1;
+}
+
+.full-width-btn {
+  text-align: center;
+  width: calc(100vw);
+  padding: 8px;
+  margin-left: -8px;
+}
+
+.full-width-btn:hover {
+  opacity: 0.7;
+}
+
+.full-width-btn:active {
+  box-shadow: inset 0px 0px 15px #c1c1c1;
+}
+
+.recipe-image {
+  margin: 0 auto 10px auto;
+  width: 95%;
+  position: relative;
+}
+
+.recipe-image img {
+  z-index: 1;
+  width: 100%;
+}
+
+.recipe-image i {
+  color: red;
+  padding: 1px 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid grey;
+  font-size: xx-large;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.day-planning {
+  padding: 3px 3px 10px 3px;
+  width: 98vw;
+}
+
+.week-divider {
+  font-size: x-large;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.day-planning tr td:nth-child(1) {
+  padding: 5px;
+  width: 48vw;
+}
+
+.recipe-select {
+  width: 48vw;
+}
+
+.highlight {
+  background-color: rgba(255, 20, 147, 0.8);
+  color: white;
+}
+
+.planning-btn-container {
+  margin-top: 2vh;
+}
+
+.planning-btn-container button {
+  width: calc(50vw - 11px);
+}
+
+.canvas,
+.canvas img {
+  width: 80vw;
+
+  color: red;
+}
+
+.bordered-grey {
+  border: 1px solid grey;
+}
+
+.float-right {
+  float: right;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+@media screen and (max-width: 480px) {
+}

@@ -1,0 +1,30 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 10px 10px 10px 15px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.recipe {
+    border-bottom: 1px solid black;
+}
+
+.content-container {
+    margin-bottom: 7px;
+}
+
+.recipe-image {
+    height: 150px;
+}
+
+.bordered {
+    border: 1px solid black;
+}
+
+@media print {
+    .shopping-list {
+        page-break-before: always;
+    }
+}
